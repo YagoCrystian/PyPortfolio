@@ -1,0 +1,29 @@
+print("Ola Seja bem vindo!")
+print("Insira os dados para darmos continuidade: ")
+
+altura = float(input("Digita sua altura em metros: "))
+peso = float(input("Digite seu peso atual em kgs: "))
+imc = peso/(altura*altura)
+
+print("Seu IMC atual e: {:.2f}".format(imc))
+
+if imc < 16.9:
+    print("Voce esta muito abaixo do seu peso ideal!")
+
+elif 18.4>imc>17:
+    print("Voce esta abaixo do seu peso ideal!")
+
+elif 24.9>imc>18.5:
+    print("Voce esta no seu peso ideal!")
+
+elif 29.9>imc>25:
+    print("Seu peso esta ideal!")
+
+elif 34.9>imc>30:
+    print("Seu peso esta no nivel Obesidade I")
+
+elif 40>imc>35:
+    print("Seu peso esta no nivel Obesidade II")
+
+else:
+    print("Seu peso esta no nivel Obesidade III")
